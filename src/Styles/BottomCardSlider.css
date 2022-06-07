@@ -1,0 +1,97 @@
+.cardSliderBody h3{
+    padding-top: 15px ;
+    line-height: 24px;
+    font-size: 20px;
+    color: #002240;
+    text-align: left;
+}
+.cardSliderBody p{
+    font-size: 14px;
+    line-height: 16px;
+    color: #955da4 ;
+    width: 100%;
+    text-align: left;
+    font-weight: 600;
+    margin-bottom: 10px;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.cardSlider .cardSliderBody{
+    padding: 15px 20px;
+}
+.cardSliderBody{
+    flex: 1 1 auto;
+    -webkit-box-flex: 1;
+}
+.cardSliderBody .starRate{
+    background-color: #f0c61a;
+    border-radius: 9px;
+    min-width: 60px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    max-width: fit-content;
+    padding-right: 10px;
+}
+.cardSliderBody span{
+    text-align: left !important;
+    direction: initial;
+}
+.starRate{
+    margin-right: auto;
+}
+.starRate img{
+    width: 12px!important;
+    height: 10px!important;
+    position: relative!important;
+    margin: 0px!important;
+}
+.starRate span{
+    font-size: 15px;
+    color: #fff;
+    margin-left: 5px;
+    margin-bottom: 8px;
+    height: 15.2px;
+}
+.cardSlider .bottomSliderCard{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.bottomSliderCard{
+    text-align: left;
+    margin-right: auto;
+}
+.cardSlider.sliderCardLeft{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.bottomSliderCard p{
+    margin-bottom: 0;
+    color: #333;
+    font-size: 16px;
+    line-height: 19px;
+}
+.cardSliderBody p{
+    text-align: left!important;
+    float: left!important;
+    margin-right: auto;
+}
+.bottomSliderCard .bookNow{
+    color: #e25b25;
+    background-color: #fff;
+    border: 1px solid #e25b25;
+    border-radius: 12px;
+    min-width: 120px;
+    font-size: 14px;
+    /* line-height specifies the height of  a line */
+    line-height: 1.6; 
+    padding: 5px 10px 5px 10px;
+}

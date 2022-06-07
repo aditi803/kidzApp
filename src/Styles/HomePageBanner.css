@@ -1,0 +1,70 @@
+.mainSlider .sliderItem::before{
+    content: "";
+    display: block;
+    background: #1d1b1b6b;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+}
+.mainSlider .sliderItem
+{
+    height: 650px;
+    position: relative;
+    overflow: hidden;
+}
+.mainSlider .slick-slider button{
+    background: transparent !important;
+}
+.mainSlider .slick-slider .slick-dots {
+    bottom: 40px ;
+}
+.mainSlider .slick-slider .slick-dots li button::before{
+    font-size: 15px;
+}
+.mainSlider .slick-slider .slick-dots li.slick-active button:before{
+    color: #fff;
+}
+.mainSlider .sliderItem .sliderText{
+    width: 70%;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+.mainSlider .sliderItem .sliderText h1{
+    text-align: left;
+    font-size: 58px;
+    line-height: 64px;
+    font-weight: 700;
+    color: #fff;
+    overflow: hidden;
+}
+.mainSlider .sliderItem .sliderText p{
+    font-size: 22px;
+    font-weight: 500;
+    color: #fff;
+    max-width: 90%;
+    overflow: hidden;
+    line-height: 35px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    text-overflow: ellipsis;
+}
+.mainSlider .sliderItem .sliderText button{
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 25px;
+    color: #fff;
+    padding: 8px 0;
+    min-width: 200px;
+    margin-top: 30px;
+    font-weight: 600;
+}
+.mainSlider .sliderItem .sliderText button:hover{
+    background-color: #fff !important;
+    color: #000;
+}

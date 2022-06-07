@@ -1,0 +1,68 @@
+.containerKidsappolis{
+    background-color: #00aff4;
+    padding: 40px 0 60px;
+}
+.customKids{
+    max-width: 940px!important;
+    margin: 0 auto;
+}
+.row{
+    display: flex;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.customKids h2 {
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 58px;
+    line-height: 58px;
+    text-align: center;
+    font-weight: 700;
+}
+.kidsCarousel{
+    padding-left: 0;
+    padding-right: 0;
+}
+.activityBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    height: 100%;
+    padding-top: 30px;
+}
+.activityBox img{
+    background-color: white;
+    padding: 15px;
+    height: 150px;
+    width: 160px;
+    border-radius: 50%;
+}
+.paraKidsSection{
+    color: white;
+    font-size: 20px;
+    margin-left: 15px;
+}
+.kidsCollection{
+    margin-top: 10px;
+}
+.activityCollectionBox {
+    background-color: white;
+    width: 120px !important;
+    border-radius: 5%;
+    margin-right: 10px;
+    margin-top: 20px;
+    padding: 5px 2px 5px;
+}
+.kidsCollectionImg{
+    height: 60px;
+    width: 80px;
+    padding: 1px;
+    margin-left: 16px;
+}
+.spanKidsSection{
+    color: #002240;
+    font-size: 16px;
+    line-height: 21px;
+    padding: 10px 5px 30px 2px ;
+}

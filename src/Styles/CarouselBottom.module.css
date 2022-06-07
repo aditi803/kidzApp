@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&family=Roboto+Slab:wght@800&family=Roboto:ital,wght@0,500;1,300&display=swap');
+.title  
+{  
+        margin-bottom: 20px;  
+        padding:20px  
+} 
+/* <----------------------------------------------------------------text.css--------------------------------------------------------------------------> */
+.headerText h1{
+    width: 85%;
+    font-size: 65px;
+    margin: 0 auto;
+    color: #002240;
+    text-align: center;
+    font-weight: 650;
+}
+
+
+.headerText .bottomText{
+    font-size: 52px;
+    line-height: 36px;
+    display: block;
+    text-align: center;
+    color: #002240;
+    font-weight: 550;
+}
+.bttom2Text{
+    font-size: 22px;
+    margin-bottom: 0!important;
+    color: #002240;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    padding-top: 2rem;
+}
+
+ /* <-------------------------------------------------------owl carousel.css-------------------------------------------------------------------------> */
+
+ .item{
+     margin: 0;
+     padding-left: 5rem;
+ }
+ .card{
+    box-shadow: 0 0 12px #e4eaea;
+    border-radius: 12px ;
+    width: 293.333px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.newDeal{
+    position: absolute;
+    top: 5px;
+    left: 20%;
+    z-index: 1;
+}
+.cardBody{
+    padding: 15px 20px;
+}
+.card h3{
+    text-align: left!important;
+    margin-right: auto;
+    font-size: 16px;
+    line-height: 20px;
+    color: #002240;
+}
+p{
+    text-align: left!important;
+    float: left!important;
+    margin-right: auto;
+}
+/* .purplePara {
+    font-size: 14px;
+    line-height: 16px;
+    color: #955da4;
+    margin-bottom: 10px;
+    overflow: hidden;
+    font-family:bold;
+    text-align: left!important;
+    margin-right: auto;
+    font-weight: 800;
+} */
+/* .starRate{
+    background-color: #f0c61a;
+    border-radius: 9px;
+    min-width: 60px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    max-width: fit-content;
+    padding-right: 10px;
+} */
+/* .starRate img{
+    width: 12px!important;
+    height: 10px!important;
+    position: relative!important;
+    margin: 0px!important;
+} */
+/* .starRate span{
+    font-size: 12px;
+    color: #fff;
+    margin-left: 5px;
+    height: 15.2px;
+} */
+/* .bottomCard{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    text-align: left;
+    margin-right: auto;
+} */
+/* .cardLeft {
+    display: flex !important;
+    flex-direction: column !important;
+} */
+/* .cardLeft .bottomCard {
+    align-items: center;
+    justify-content: flex-start;
+} */
+.oldPrice{
+    font-size: 13px;
+    line-height: 15px;
+    color: #f70b0b;
+    text-decoration: line-through;
+    font-weight: 500;
+    margin: 0;
+}
+.newPrice{
+    font-size: 15px;
+    line-height: 18px;
+    margin-bottom: 0;
+    color: #333;
+}
+.bookNow{
+    color: #e25b25;
+    background-color: #fff;
+    border: 1px solid #e25b25;
+    border-radius: 12px;
+    min-width: 120px;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 5px 10px;
+    position: relative;
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+}
+
+/* <-----------------------------------------------------Slider.css-----------------------------------------------------------------------------> */
+
+.head{
+    border: 1px solid #d6e5e8;
+    background-color: #fafafa;
+    border-radius: 5px;
+    line-height: 1.42857143;  
+    align-items: center;
+    justify-content: center;
+    color: #002240; 
+    font-size: 14px;
+    font-weight: 600;
+    width: 80% !important;
+}
+
+.para{
+  text-align: center!important;
+  margin: 2%; 
+  padding-right: 1%;
+}
+.upperCarousel{
+  padding: 5%;
+}
+.upperCarousel p{
+    padding: 10px 15px;
+    text-align: center !important;
+}
+.CarouselBottomButon{
+    background: none !important;
+    color: black;
+}
+
+

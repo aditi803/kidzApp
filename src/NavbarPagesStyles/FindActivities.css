@@ -1,0 +1,40 @@
+.sidenav{
+    position: sticky;
+    top: 95px;
+    right: 0;
+    z-index: 120;
+    margin-top:130px;
+}
+.selectedSection{
+    z-index: 100;
+    top: 95px;
+    padding: 20px 0 15px 0;
+    background-color: #00AFF4;
+    position: sticky;
+    left: 0;
+}
+.selectedSection .container.selctedContainer {
+    max-width: 1170px;
+}
+.selectedSection .selctedContainer {
+    position: relative;
+    max-width: 1140px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.selctedContainer {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.search-linear-background {
+    height: 32px;
+    background: #FFFFFF;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+    width: 140px;
+}

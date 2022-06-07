@@ -1,0 +1,160 @@
+.blogBanner {
+    background-image: url("https://kidzapp.com/images/blog-banner.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 40px 0;
+    background-repeat: no-repeat;
+    box-shadow: rgb(0 0 0 / 15%) 0 0 8px;
+    margin-bottom: 28px;
+    top: 111px;
+    left: 0;
+    z-index: 999;
+    margin-top: 97px;
+}
+.kidztvNewBanner .container {
+    max-width: 975px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.NavbarBlogRow{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.NavbarBlogCol{
+    position: relative;
+    width: 60%;
+    min-height: 3px;
+    padding-right: 15px;
+    padding-left: 65px;
+}
+.navbarblogInput{
+    padding: 10px 10px 10px 20px;
+    font-size: 15px;
+    margin-right: 20px !important;
+}
+.navbarblogButton{
+    padding: 10px 15px 10px 20px;
+    border-radius: 5px !important;
+    font-size: 16px;
+}
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.back-btn {
+    margin-bottom: 20px;
+}
+.back-btn a {
+    color: #484848;
+    font-size: 16px;
+    font-weight: 700;
+    display: flex;
+    width: fit-content;
+    text-decoration: none   ;
+}
+.back-btn span {
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+}
+.container{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.blogCategoryListing {
+    padding-left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    list-style-type: none;
+    margin: 0 0 20px;
+}
+ul{
+    list-style: none;
+}
+.blogCategoryListing li {
+    flex: 0 0 25%;
+    height: 50px;
+    padding-right: 30px;
+}
+
+.blogCategoryListing{
+    width: 40%;
+}
+.blogCategoryListing li{
+    position: relative;
+    font-size: 18px;
+    line-height: 1;
+    font-weight: 400;
+    text-align: left;
+    padding: 0 15px;
+    letter-spacing: .5px;
+    margin: 5px 0;
+    border-radius: 5px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    min-width: 100%;
+    align-items: center;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.blogCategoryListing .firstCategory{
+    background-image: url("../Assets/NavbarBlog/listCategory1.webp");
+}
+.blogCategoryListing .secondCategory{
+    margin-left: 20px;
+    background-image: url("https://beta.kidzapp.com/images/btn-02.png");
+}
+.blogCategoryListing .thirdCategory{
+    margin-left: 20px;
+    background-image: url("https://beta.kidzapp.com/images/btn-03.png");
+}
+.blogCategoryListing .fourthCategory{
+    margin-left: 20px;
+    background-image: url("https://beta.kidzapp.com/images/btn-04.png");
+}
+
+.blogCategoryListing li span {
+    display: inline-block;
+    padding: 24px 0;
+    border-left: 1px solid #fff;
+    padding-left: 8px;
+}
+.blogCategoryListing li img {
+    width: 16px;
+    margin-left: 20px;
+}
+/* -------------------------------------------------------------------- text part ------------------------------------------------------------- */
+
+.NavbarBlogCol h1{
+    color: #222;
+    font-size: 36px;
+    line-height: 36px;
+    text-align: left;
+    margin-bottom: 7px;
+    letter-spacing: -.1px;
+    font-weight: 650;
+}
+.NavbarBlogCol p{
+    color: #222;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: left;
+    font-weight: 400;
+    margin-bottom: 22px;
+    margin-right: auto;
+}
+.NavbarBlogCol .blogText{
+    width: 100% !important;
+}
+

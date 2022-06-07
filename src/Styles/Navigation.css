@@ -1,0 +1,181 @@
+.nav-block{
+  box-shadow: rgb(0 0 0 / 15%) 0 0 8px;
+  position: fixed;
+  width: 100%;
+  background-color: #fff;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.nav-block .cust-nav{
+  margin: 0 auto;
+  max-width: 1140px;
+  padding: 12.5px 0;
+}
+.nav-ul-bottom a{
+  text-decoration: none!important;
+}
+.navbar-nav a{
+  text-decoration: none!important;
+}
+.cust-nav .nav-logo{
+  width: 200px;
+  height: auto;
+  display: inline-block;
+}
+
+.cust-nav .main-navarea{
+  flex-direction: column-reverse;
+  align-items: flex-end;
+}
+
+.cust-nav .main-navarea .nav-ul-bottom{
+  display: flex;
+  margin: 10px 60px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.cust-nav .main-navarea .nav-ul-bottom li{
+  margin-left: 15px;
+}
+
+.cust-nav .main-navarea .nav-ul-bottom li:first-child{
+  margin-left: 0;
+}
+
+.cust-nav .main-navarea .nav-ul-bottom li a{
+  color: #002240;
+  line-height: 19px;
+  font-size: 18px;
+  padding: 5px 15px;
+}
+
+.cust-nav .main-navarea ul.navbar-nav{
+  align-items: center;
+  list-style: none;
+  
+}
+
+.navbar-nav li{
+  margin-right: 10px;
+}
+
+.navbar-nav li:nth-child(1) a, 
+.navbar-nav li:nth-child(3) a{
+  color: #002240;
+  line-height: 19px;
+  font-size: 16px;
+  padding: 6px 40px 6px 20px;
+  position: relative;
+  border: 1px solid #d8d8d8;
+  border-radius: 19px;
+  outline: 0;
+}
+
+.navbar-nav li:nth-child(1) a::before,
+.navbar-nav li:nth-child(3) a::before{
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 33%;
+  right: 20px;
+  content: "";
+  border: solid #838383;
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(45deg);
+  transition: all .5s;
+}
+
+.navbar-nav li:nth-child(2) div{
+  border: 1px solid #cecece;
+  border-radius: 25px;
+}
+
+.navbar-nav li:nth-child(2) div input{
+  min-width: 230px;
+  padding: 6px 0 6px 20px;
+  border: none;
+  background-color: transparent;
+  outline: 0;
+  color: #002240;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.navbar-nav li:nth-child(2) div button{
+  padding: 3px 15px;
+  background: 0 0;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.navbar-nav li:nth-child(2) div button svg{
+  color: #00aff4;
+  width: 15px;
+}
+
+.navbar-nav li:nth-child(4){
+  border: 1px solid #d8d8d8;
+  border-radius: 19px;
+  max-height: 33px;
+}
+
+.navbar-nav li:nth-child(4) div::after{
+  position: absolute;
+  pointer-events: none;
+  font-weight: 400;
+  right: 10px;
+  top: 33%;
+  z-index: 2;
+  transition: all .5s;
+  content: "";
+  border: solid #838383;
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(45deg);
+}
+
+.navbar-nav li:nth-child(4) div button{
+  width: 100px;
+  text-align: left;
+  padding: 4px 28px 4px 12px;
+  color: #002240!important;
+  font-size: 14px;
+  background-color: transparent;
+  box-shadow: none;
+  border: none;
+}
+
+.navbar-nav li:nth-child(4) div button span{
+  display: flex;
+  align-items: center;
+}
+
+.navbar-nav li:nth-child(4) div button span img{
+  margin: 0 10px 0 0;
+}
+
+.navbar-nav li:last-child{
+  margin-right: 0;
+}
+
+.navbar-nav li:last-child a{
+  background-color: #00aff4;
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0;
+  cursor: pointer;
+  position: relative;
+  outline: 0;
+}

@@ -1,0 +1,71 @@
+.kids-collection.blog-picks {
+    background-color: #002240;
+    padding: 40px 0 45px;
+}
+.container.cust-container {
+    max-width: 940px!important;
+    margin: 0 auto;
+}
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.kids-collection h2 {
+    color: #fff;
+    margin-bottom: 40px;
+    font-size: 50px;
+    font-weight: 700;
+}
+.blogCardText{
+    color: #002240;
+    font-size: 26px;
+    font-weight: 600;
+    
+    /* margin-bottom: 15px; */
+}
+.blogCard{
+    border-radius: 20px;
+    overflow: hidden;
+    height: 480px;
+    margin-bottom: 20px;
+    border: none;
+}
+.blogCard hr{
+    color: purple;
+    width: 50px;
+    height: 8px;
+}
+.blogCardParaText{
+    color: purple;
+    font-size: 20px;
+}
+.blogCard2{
+    border-radius: 20px;
+    overflow: hidden;
+    height: 440px;
+    margin-bottom: 20px;
+}
+.blogCardBody{
+    padding: 8px 10px 10px 20px !important;
+    position: relative;
+}
+.blogCardParaText{
+    position: absolute;
+    bottom: 0;
+}
+.blogCardBody hr{
+    position: absolute;
+    bottom: 35px;
+}
+.blogButton{
+    background: none;
+    color: white;
+    border-radius: 20px;
+    padding: 5px 100px 5px 100px !important;
+    margin-top: 20px;
+}
+

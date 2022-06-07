@@ -1,0 +1,80 @@
+.mainFooter{
+    background-color: #002240;
+    color: #8d969b;
+    height: auto;
+}
+.footerHeading{
+    color: #cecece;
+    margin-top: 20px;
+    font-size: 22px !important;
+    text-align: left !important;
+    cursor: pointer;
+}
+.FaInstagram{
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+.footerHeadingFollow{
+    color: #cecece;
+    margin-top: 15px;
+    font-size: 22px !important;
+}
+.FaFacebook{
+    color: white;
+    font-size: 22px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.FaYoutube{
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+}
+.FaWhatsapp{
+    color: white;
+    font-size: 22px;
+    cursor: grab;
+    margin-right: 20px;
+}
+.paragraphFooter{
+    cursor: pointer;
+    margin-right: 20px;
+}
+.paragraphFooter2{
+    cursor: pointer;
+    margin-right: 60px;
+}
+.paragraphFooter3{
+    cursor: pointer;
+    margin-right: 150px;
+}
+.paragraphFooter4{
+    cursor: pointer;
+    margin-right: 80px;
+}
+.footerParagraph5{
+    margin-right: 150px;
+    cursor: pointer;
+}
+.masterCard{
+    margin-left: 20px;
+    width: 60px;
+}
+.visaCard{
+    width: 60px;
+}
+.footerBottom{
+    background-color: #002240;
+    height: auto;
+}
+.whatsappImg{
+    position: fixed;
+    bottom: 20px;
+    width: 100px;
+    right: 50px;
+}
+.footerIcon{
+    padding-bottom: 5%;
+}

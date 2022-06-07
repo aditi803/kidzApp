@@ -1,0 +1,21 @@
+.container{
+    background-color: white;
+}
+.featuredSpan{
+    margin-top: 25px;
+    font-size: 48px;
+    line-height: 58px;
+    color: #002240;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.featuredImage img{
+    height: 40px;
+    width: 200px;
+    padding-left: 50px;
+}
+.featuredCarousel{
+    padding-top: 60px;
+    padding-bottom: 100px;
+}

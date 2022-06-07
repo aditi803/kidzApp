@@ -1,0 +1,123 @@
+.GetInTouchBanner {
+    background-image: url("https://kidzapp.com/images/get-touch-banner.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 40px 0;
+    background-repeat: no-repeat;
+    margin-top: 97px;
+}
+.GetInTouchContainer{
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.GetInTouchRow{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.GetInTouchCol{
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.GetInTouchWrapper{
+    padding: 0px 160px;
+    text-align: center;
+    color: #484848;
+}
+.GetInTouchBanner h1 {
+    font-size: 40px;
+    line-height: 41px;
+    letter-spacing: -1px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.GetInTouchBanner h2 {
+    font-size: 19px;
+    width: 60%;
+    margin: 0 auto;
+    line-height: 24px;
+    font-weight: 500;
+}
+.GetInTouchForm{
+    padding: 50px 0px;
+    padding-bottom: 0;
+    margin-bottom: -10px;
+}
+.GetInTouchForm .GetInTouchFormWrapper{
+    padding: 0 100px;
+}
+.GetInTouchFormRow{
+    display: flex;
+    flex-wrap: wrap;
+}
+.GetInTouchFormCol{
+    margin-bottom: 1rem;
+    margin-right: 5px;
+    position: relative;
+    min-height: 1px;
+    width: 100%;
+}
+.GetInTouchFormCol label{
+    font-size: 15px;
+    color: #484848;
+    margin-bottom: 5px;   
+    font-weight: 500;
+}
+.formLabel{
+    margin-right: 450px;
+}
+.form-row{
+    padding-right: 5px;
+    padding-left: 5px;
+}
+.GetInTouchForm .form-control{
+    border: 1px solid #999;
+    background: #fafafa;
+    border-radius: 4px;
+    outline: none;
+    box-shadow: none;
+    width: 100%;
+    height: 36px;
+    padding: 0 15px;
+}
+.form-control{
+    display: block;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+}
+.form-group{
+    margin-bottom: 1rem;
+}
+.formLabel2{
+    margin-right: 64rem;
+}
+.gRecaptchaResponse{
+    width: 250px;
+    height: 40px;
+    border: 1px solid rgb(193, 193, 193);
+    margin: 10px 25px;
+    padding: 0px;
+    resize: none;
+    display: none;
+}
+.getInTouchButton{
+    font-weight: 700;
+    margin-bottom: 30px;
+    font-size: 18px;
+    padding: 5px 50px 5px 50px;
+}
+.touchAddressDetails{
+    margin: 40px 0;
+}
+.touchAddressDetails p{
+    font-size: 15px;
+    color: #484848;
+    font-weight: 500;
+    margin-bottom: 10px;
+    line-height: 21px;
+}
