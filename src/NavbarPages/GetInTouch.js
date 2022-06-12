@@ -1,6 +1,8 @@
 import React from 'react'
 import "../NavbarPagesStyles/GetInTouch.css"
 import BottomFooter from "../Pages/BottomFooter"
+import Feed from '../Pages/Feed'
+import Recaptcha from './Recaptcha'
 
 const GetInTouch = () => {
   return (
@@ -84,6 +86,7 @@ const GetInTouch = () => {
                       />
                     </div>
                   </div>
+                  <Recaptcha />
                   <button type="button" class="btn btn-primary getInTouchButton">SEND</button>
                 </form>
               </div>
@@ -91,7 +94,7 @@ const GetInTouch = () => {
           </div>
         </div>
       </div>
-      <BottomFooter />
+      <Feed />
     </div>
   )
 }

@@ -2,6 +2,7 @@ import React from 'react'
 import Feed from  "../Pages/Feed"
 import Map from "../NavbarPages/Map"
 import "../NavbarPagesStyles/getListed.css"
+import Recaptcha from "../NavbarPages/Recaptcha"
 const GetListed = () => {
   return (
     <div>
@@ -164,10 +165,11 @@ const GetListed = () => {
                     name='phone number'
                   />
                 </div>
+                <Recaptcha />
 
                 <button type="button" className="btn btn-primary getListedButton">GET LISTED</button>
               </form>
-
+              
               <Feed />
             </div>
           </div>
