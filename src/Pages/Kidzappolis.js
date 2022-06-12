@@ -139,44 +139,43 @@ const Kidzappolis = () => {
         <div className={style.containerKidsappolis}>
             <div className={style.customKids}>
                 <div className='row'>
+                    
                     <div className='col-md-12'>
                         <h2>Kidzappolis</h2>
                         <div className="row d-flex justify-content-center text-center">
-                        <div className="col-md-12">
-                            <div className={style.kidsCarousel}>
-                                <Slider {...settings}>
-                                    {item?.map((slide,i) => {
-                                        return (
-                                        
-                                            <div key={slide.id} className={style.activityBox}>
-                                                <img src={slide.image_url} alt="Featured" style={{height:"150px", width:"160px"}}/>
-                                                <p className={style.paraKidsSection}>{slide.name}</p>
-                                            </div>
-                                        
-                                        )
-                                    })}
-                                </Slider>
+                            <div className="col-md-12">
+                                <div className={style.kidsCarousel}>
+                                    <Slider {...settings}>
+                                        {item?.map((slide,i) => {
+                                            return (
+                                                <div key={slide.id} className={style.activityBox}>
+                                                    <img src={slide.image_url} alt="Featured" style={{height:"150px", width:"160px"}}/>
+                                                    <p className={style.paraKidsSection}>{slide.name}</p>
+                                                </div>
+                                            )
+                                        })}
+                                    </Slider>
+                                </div>
                             </div>
-                        </div>
                         </div>
                     </div>
                     <div className='col-md-12'>
                         <h2 className={style.kidsCollection}>Kidzapproved Collections</h2>
                         <div className="row d-flex justify-content-center text-center">
-                        <div className="col-md-12">
-                            <div className={style.kidsCarousel}>
-                                <Slider {...collectionSettings}>
-                                    {collections.map((slide, i) => {
-                                        return (
-                                            <div key={slide.id} className={style.activityCollectionBox}>
-                                                <img src={slide.src} alt="Featured" className={style.kidsCollectionImg}/>
-                                                <span className={style.spanKidsSection}>{slide.captionCollection}</span>
-                                            </div>
-                                        )
-                                    })}
-                                </Slider>
+                            <div className="col-md-12">
+                                <div className={style.kidsCarousel}>
+                                    <Slider {...collectionSettings}>
+                                        {collections.map((slide, i) => {
+                                            return (
+                                                <div key={slide.id} className={style.activityCollectionBox}>
+                                                    <img src={slide.src} alt="Featured" className={style.kidsCollectionImg}/>
+                                                    <span className={style.spanKidsSection}>{slide.captionCollection}</span>
+                                                </div>
+                                            )
+                                        })}
+                                    </Slider>
+                                </div>
                             </div>
-                        </div>
                         </div>
                     </div>
                     

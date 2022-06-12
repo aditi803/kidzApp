@@ -63,7 +63,7 @@ const Featured = () => {
         <div className="container">
             <div className='row'>
                 <span className={style.featuredSpan}>As Featured in </span>
-                    <div class="row d-flex justify-content-center text-center">
+                    <div className="row d-flex justify-content-center text-center">
                         <div className="col-md-7">
                             <div className={style.featuredCarousel}>
                                 <Slider {...settings}>

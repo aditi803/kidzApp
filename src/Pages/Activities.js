@@ -3,7 +3,6 @@ import "../Styles/Activities.css"
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Featured from './Featured';
 import axios from 'axios';
 
 const Activities = () => {
@@ -77,13 +76,13 @@ const Activities = () => {
                         {item?.map((slide, i) => {
                           return (
                             <div key={slide.id}>
-                              <div class="card activityCard" style={{width:"65%", marginLeft:"80px"}}>
-                                <div class="card-body activityCardBody">
+                              <div className="card activityCard" style={{width:"65%", marginLeft:"80px"}}>
+                                <div className="card-body activityCardBody">
                                   <div>
-                                    <p class="activityVenue">{slide.venue.title}</p><br/>
+                                    <p className="activityVenue">{slide.venue.title}</p><br/>
                                     <span className='activityReviewTitle'>{slide.title}</span>
                                     <hr/>
-                                    <p class="boldActivityP">{slide.review}</p>
+                                    <p className="boldActivityP">{slide.review}</p>
                                   </div>
                                 </div>
                                 <div className='bottomActivityCard'>
@@ -92,7 +91,7 @@ const Activities = () => {
                                     <p className='monthAgo'>2 days ago</p>
                                   </div>
                                   <span className='activityStarRate'>
-                                    <img src='https://drfsb8fjssbd3.cloudfront.net/images/new-white-star.svg' alt='Star image'/>
+                                    <img src='https://drfsb8fjssbd3.cloudfront.net/images/new-white-star.svg' alt='Star'/>
                                     <span>{slide.rating}.0</span>
                                   </span>
                                 </div>

@@ -1,12 +1,12 @@
 import React from 'react'
 import "../NavbarPagesStyles/KidzappAwards.css"
-import BottomFooter from "../Pages/BottomFooter"
+import Feed from '../Pages/Feed'
 
 const KidzappAwards = () => {
   return (
     <div>
       <div className="awardBanner">
-        <img src="	https://drfsb8fjssbd3.cloudfront.net/images/kidzapp-awards-banner.png" />
+        <img src="	https://drfsb8fjssbd3.cloudfront.net/images/kidzapp-awards-banner.png" alt='...'/>
       </div>
       <div className='journeySection'>
         <div className='container kidzAppAwardsContainer'>
@@ -79,7 +79,7 @@ const KidzappAwards = () => {
                         </p>
                       </div>
                       <div className='rightBlock'>
-                        <img src='https://drfsb8fjssbd3.cloudfront.net/images/fun-block.jpeg' alt='Gold Winner Image' />
+                        <img src='https://drfsb8fjssbd3.cloudfront.net/images/fun-block.jpeg' alt='Gold Winner' />
                       </div>
                     </div>
                     <div className='winnerSectionInner silverBlock'>
@@ -97,6 +97,7 @@ const KidzappAwards = () => {
                   </div>
                 </div>
               </div>
+
               <div className='col-12 awardWinnersCol'>
                 <div className='winnersOuterSection'>
                   <div className='categoryBadgeSection'>                
@@ -113,7 +114,7 @@ const KidzappAwards = () => {
                         </p>
                       </div>
                       <div className='rightBlock'>
-                        <img src='https://drfsb8fjssbd3.cloudfront.net/images/fun-city.jpg' alt='Gold Winner Image' />
+                        <img src='https://drfsb8fjssbd3.cloudfront.net/images/fun-city.jpg' alt='Gold Winner' />
                       </div>
                     </div>
                     <div className='winnerSectionInner silverBlock'>
@@ -131,6 +132,7 @@ const KidzappAwards = () => {
                   </div>
                 </div>
               </div>
+
               <div className='col-12 awardWinnersCol'>
                 <div className='winnersOuterSection'>
                   <div className='categoryBadgeSection'>                
@@ -147,7 +149,7 @@ const KidzappAwards = () => {
                         </p>
                       </div>
                       <div className='rightBlock'>
-                        <img src='https://drfsb8fjssbd3.cloudfront.net/images/yas-waterworld.jpg' alt='Gold Winner Image' />
+                        <img src='https://drfsb8fjssbd3.cloudfront.net/images/yas-waterworld.jpg' alt='Gold Winner' />
                       </div>
                     </div>
                     <div className='winnerSectionInner silverBlock'>
@@ -165,6 +167,7 @@ const KidzappAwards = () => {
                   </div>
                 </div>
               </div>
+              
               <div className='col-12 awardWinnersCol'>
                 <div className='winnersOuterSection'>
                   <div className='categoryBadgeSection'>                
@@ -181,7 +184,7 @@ const KidzappAwards = () => {
                         </p>
                       </div>
                       <div className='rightBlock'>
-                        <img src='https://drfsb8fjssbd3.cloudfront.net/images/cheeky-monkeys.jpg' alt='Gold Winner Image' />
+                        <img src='https://drfsb8fjssbd3.cloudfront.net/images/cheeky-monkeys.jpg' alt='Gold Winner' />
                       </div>
                     </div>
                     <div className='winnerSectionInner silverBlock'>
@@ -202,7 +205,7 @@ const KidzappAwards = () => {
             </div>
         </div>
       </div>
-      <BottomFooter />
+      <Feed />
     </div>
   )
 }

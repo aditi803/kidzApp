@@ -23,20 +23,22 @@ const Blog = () => {
                   <button 
                     type="button" 
                     className="btn btn-primary navbarblogButton"
-                  >Search</button>
+                  >Search
+                  </button>
                 </div>
               </div>  
             </div>
           </div>
         </div>
       </div>
+
       <div className='container'>
         <div className='row NavbarBlogRow'>
           <div className='col-12 NavbarBlogCol'>
             <div className='back-btn'>
               <Link to ="/">
                 <span>
-                  <img src="https://drfsb8fjssbd3.cloudfront.net/images/back-arrow-kd-new.svg" />
+                  <img src="https://drfsb8fjssbd3.cloudfront.net/images/back-arrow-kd-new.svg" alt="..."/>
                 </span>
                  Go Back
               </Link>
@@ -44,6 +46,7 @@ const Blog = () => {
           </div>
         </div>
       </div>
+
       <section className='blogCategory'>
         <div className='container'>
           <div className='row NavbarBlogRow'>
@@ -78,6 +81,7 @@ const Blog = () => {
           </div>
         </div>
       </section>
+
       <div className='container'>
         <div className='row NavbarBlogRow' >
           <div className='col-12 NavbarBlogCol' style={{width:"100%"}}>
@@ -86,6 +90,7 @@ const Blog = () => {
           </div>
         </div>
       </div>
+      
       <div className='container'>
         <div className='row'>
           <div className='col-12'>

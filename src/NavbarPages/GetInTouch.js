@@ -1,12 +1,12 @@
 import React from 'react'
 import "../NavbarPagesStyles/GetInTouch.css"
-import BottomFooter from "../Pages/BottomFooter"
 import Feed from '../Pages/Feed'
 import Recaptcha from './Recaptcha'
 
 const GetInTouch = () => {
   return (
     <div>
+      
       <div className='GetInTouchBanner'>
         <div className='container GetInTouchContainer'>
           <div className='row GetInTouchRow'>
@@ -26,7 +26,9 @@ const GetInTouch = () => {
             <div className='col-md-12 GetInTouchCol'>
               <div className='wrapper GetInTouchFormWrapper'>
                 <form id='GetInTouchCreate' noValidate="novalidate" style={{display:"block", marginTop: "0rem"}}>
+
                   <div className='form-row GetInTouchFormRow'>
+                    
                     <div className='form-group col GetInTouchFormCol'>
                       <label className='formLabel'>
                         <b>First Name</b>
@@ -37,6 +39,7 @@ const GetInTouch = () => {
                         className='form-control'
                       />
                     </div>
+
                     <div className='form-group col GetInTouchFormCol'>
                       <label className='formLabel'>
                         <b>Last Name</b>
@@ -61,6 +64,7 @@ const GetInTouch = () => {
                       />
                     </div>
                   </div>
+
                   <div className='form-row GetInTouchFormRow'>
                     <div className='form-group col GetInTouchFormCol'>
                       <label className='formLabel2'>
@@ -73,6 +77,7 @@ const GetInTouch = () => {
                       />
                     </div>
                   </div>
+
                   <div className='form-row GetInTouchFormRow'>
                     <div className='form-group col GetInTouchFormCol'>
                       <label className='formLabel2'>
@@ -86,6 +91,7 @@ const GetInTouch = () => {
                       />
                     </div>
                   </div>
+
                   <Recaptcha />
                   <button type="button" class="btn btn-primary getInTouchButton">SEND</button>
                 </form>
@@ -94,6 +100,7 @@ const GetInTouch = () => {
           </div>
         </div>
       </div>
+
       <Feed />
     </div>
   )

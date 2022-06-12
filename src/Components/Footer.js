@@ -13,6 +13,7 @@ const Footer = () => {
             <div className='container col-md-12'>
                 <div className='row'>
                     <div className='col '></div>
+
                     <div className='col'>
                         <h3 className={style.footerHeading}>Kids Activity by category</h3>
                         <div className={style.paragraphFooter}>
@@ -23,6 +24,7 @@ const Footer = () => {
                             <p>Art, Music & Dance</p>
                         </div>
                     </div>
+
                     <div className='col'>
                         <h3 className={style.footerHeading}>Kids Activity by category</h3>
                         <div className={style.paragraphFooter}>
@@ -34,6 +36,7 @@ const Footer = () => {
                             <p>Explore The City</p>
                         </div>      
                     </div>
+
                     <div className='col'>
                         <h3 className={style.footerHeading}>Family Activity</h3>
                         <div className={style.paragraphFooter}>
@@ -42,6 +45,7 @@ const Footer = () => {
                             <p>Events</p>
                         </div>
                     </div>
+
                     <div className='col'>
                         <h3 className={style.footerHeading}>Others</h3>
                         <div className={style.paragraphFooter}>
@@ -53,6 +57,7 @@ const Footer = () => {
                             <p>Site Map</p>
                         </div>
                     </div>
+
                     <div className='col'>
                         <h3 className={style.footerHeading}>Available on</h3>
                         <div className='col'>
@@ -60,7 +65,9 @@ const Footer = () => {
                             <img style={{width:"130px", display:"flex"}} src="https://drfsb8fjssbd3.cloudfront.net/images/kidzapp-google-play.svg" alt='...'/>                          
                         </div>
                     </div>
+
                 </div>
+
                 <div className='row'>
                     <div className='col col-md-6'></div>
                     <div className='col'>
@@ -88,7 +95,9 @@ const Footer = () => {
                     </div>
                     </div>    
                 </div>
+
                 <hr/>
+                
                 <div className='row footerBottom'>
                     <div className='col footerBottomParagraph'>Copyright c 2020 KidzApp.com. All Rights Reserved</div>
                     <div className='col' style={{paddingBottom:"20px"}}>

@@ -107,88 +107,80 @@ const CarouselBottom = () => {
   return (
 
     <>
-    <Container>  
-{/* <---------------------------------------------------------text----------------------------------------------------------------------------------->       */}
-        <div className='container-fluid my-5 ' >  
-            <div className={style.headerText}>
-                <h1>Find the best places to take your <br/> kids in the UAE</h1><br/>
-                <span className={style.bottomText}>
-                    Handpicked Experiences
-                </span>
-                <h2 className={style.bttom2Text}>
-                    Our pick of the best kids activities in Dubai, Abu Dhabi and the rest of the UAE
-                </h2>
-            </div>  
-            <div class="row d-flex justify-content-center text-center">
-                <div className="col-md-10">
-                    <div className={style.upperCarousel}>
-                    <Slider {...settings}>
-                        {item?.map((slide, i) => {            
-                            return (
-                                
-                                <div key={slide.id} className={style.head}>                                   
-                                    <button onClick={()=>setBtnName(slide.internal_name)} className={style.para}>{slide.name}</button>             
-                                </div>
-                            )
-                        })}
-                    </Slider>
-                    </div>
-                </div>
-            </div>
-        <div> 
-             
-{/* <-----------------------------------------------------------------Slick Slider2------------------------------------------------------------------> */}
-            
-<div className='container'>
-        <div className='row' style={{justifyContent:" center"}}>
-            
-            <Slider {...sliderSettings}>
-            {
-                    data?.map((slide,i) =>                 
-                    (   
-                        <div className='col-3' key={slide.id} >
-                                    
-                           <div className='cardSlider' style={{boxShadow: "1px 1px 5px #999",
-                                background: "#eeeeee66", 
-                                margin:'0.5rem 1rem',
-                                width:"320px",
-                                height:"350px",
-                                }}>
-                               <div className="img-blog">
-                                    <img src={slide.image_url}  
-                                        className="card-img-top blogDataImg"
-                                        style={{height:"180px", width:"450px",marginTop: "5px"}}
-                                        alt="..." 
-                                    />
-                                    <div className='cardSliderBody'>
-                                    <h3>{slide.title}</h3>
-                                    <p>{slide.address}</p> 
-                                    <span className='starRate'>
-                                        <img src='https://drfsb8fjssbd3.cloudfront.net/images/new-white-star.svg' alt='Star'/>
-                                        <span>{slide.average_rating.toFixed(1)}</span>
-                                    </span>
-                                    <div className='bottomSliderCard'>
-                                        <div className='sliderCardLeft'>
-                                            <p>{slide.city.country.currency_code}</p>
+        <Container>  
+            {/* <---------------------------------------------------------text----------------------------------------------------------------------------------->       */}
+            <div className='container-fluid my-5 ' >  
+                <div className={style.headerText}>
+                    <h1>Find the best places to take your <br/> kids in the UAE</h1><br/>
+                    <span className={style.bottomText}>
+                        Handpicked Experiences
+                    </span>
+                    <h2 className={style.bttom2Text}>
+                        Our pick of the best kids activities in Dubai, Abu Dhabi and the rest of the UAE
+                    </h2>
+                </div>  
+                {/* -------------------------------------------------------------Slick Slider1----------------------------------------------------------- */}
+                <div className="row d-flex justify-content-center text-center">
+                    <div className="col-md-10">
+                        <div className={style.upperCarousel}>
+                            <Slider {...settings}>
+                                {item?.map((slide, i) => {            
+                                    return (  
+                                        <div key={slide.id} className={style.head}>                                   
+                                            <button onClick={()=>setBtnName(slide.internal_name)} className={style.para}>{slide.name}</button>             
                                         </div>
-                                        <button className='bookNow'>Book Now</button>
-                                    </div>    
-                                </div> 
-                                </div>
-                                   
-                            </div> 
+                                    )
+                                })}
+                            </Slider>
                         </div>
-                    ))
-                }
-               </Slider> 
-        </div>
-    </div>
-
-             
-            <button type="button" class="btn btn-outline-success" style={{borderRadius:"30px", padding:"8px 65px", marginTop: "50px"}}>View All</button>
-            </div>  
-        </div>    
-    </Container> 
+                    </div>
+                </div>    
+                {/* <-----------------------------------------------------------------Slick Slider2------------------------------------------------------------------> */}
+                <div className='container'>
+                <div className='row' style={{justifyContent:" center"}}>
+                    <Slider {...sliderSettings}>
+                        {
+                            data?.map((slide,i) =>                 
+                            (   
+                                <div className='col-3' key={slide.id} >            
+                                    <div className='cardSlider' 
+                                        style={{boxShadow: "1px 1px 5px #999",
+                                            background: "#eeeeee66", 
+                                            margin:'0.5rem 1rem',
+                                            width:"320px",
+                                            height:"350px",
+                                            }}>
+                                        <div className="img-blog">
+                                            <img src={slide.image_url}  
+                                                    className="card-img-top blogDataImg"
+                                                    style={{height:"180px", width:"450px",marginTop: "5px"}}
+                                                    alt="..." 
+                                            />
+                                            <div className='cardSliderBody'>
+                                                    <h3>{slide.title}</h3>
+                                                    <p>{slide.address}</p> 
+                                                    <span className='starRate'>
+                                                        <img src='https://drfsb8fjssbd3.cloudfront.net/images/new-white-star.svg' alt='Star'/>
+                                                        <span>{slide.average_rating.toFixed(1)}</span>
+                                                    </span>
+                                                    <div className='bottomSliderCard'>
+                                                        <div className='sliderCardLeft'>
+                                                            <p>{slide.city.country.currency_code}</p>
+                                                        </div>
+                                                        <button className='bookNow'>Book Now</button>
+                                                    </div>    
+                                            </div> 
+                                        </div>  
+                                    </div> 
+                                </div>
+                            ))
+                        }
+                    </Slider> 
+                </div>
+                </div>
+                <button type="button" class="btn btn-outline-success" style={{borderRadius:"30px", padding:"8px 65px", marginTop: "50px"}}>View All</button>  
+            </div>    
+        </Container> 
     </> 
   )
 }

@@ -40,7 +40,7 @@ const Blog = () => {
               <button type="button" className="btn btn-light btn-lg blogButton">View All</button>
             </div>
           </div>
-        </div>
+      </div>
     </div> 
   </>
   )

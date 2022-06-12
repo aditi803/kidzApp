@@ -57,20 +57,20 @@ const HomePageBanner = () => {
 
     <div>
         <div className='mainSlider'>
-        <Slider {...settings}>
-            {item?.map((slide,i) => {
-                return (
-                            <div key={slide.id} className="sliderItem"alt={slide.image_url_alt} >
-                                <img src={slide.image_url} alt="Featured" className="d-block w-100" />
-                                <div className='sliderText'>
-                                    <h1>{slide.title}</h1>
-                                    <p>{slide.description}</p>
-                                    <button className='btn'>{slide.booking_button.text}</button>
+            <Slider {...settings}>
+                {item?.map((slide,i) => {
+                    return (
+                                <div key={slide.id} className="sliderItem"alt="..." >
+                                    <img src={slide.image_url} alt="Featured" className="d-block w-100" />
+                                    <div className='sliderText'>
+                                        <h1>{slide.title}</h1>
+                                        <p>{slide.description}</p>
+                                        <button className='btn'>{slide.booking_button.text}</button>
+                                    </div>
                                 </div>
-                            </div>
-                    )
-                })}
-        </Slider>
+                        )
+                    })}
+            </Slider>
         </div>
     </div>
   )
