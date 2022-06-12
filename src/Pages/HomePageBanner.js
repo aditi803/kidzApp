@@ -11,6 +11,7 @@ const HomePageBanner = () => {
         autoplay:true,
         autoplaySpeed:2000,
         infinite: true,
+        arrows:false,
         slidesToShow: 1,
         dots:true,
         lazyLoad: true,
@@ -60,7 +61,7 @@ const HomePageBanner = () => {
             {item?.map((slide,i) => {
                 return (
                             <div key={slide.id} className="sliderItem"alt={slide.image_url_alt} >
-                                <img src={slide.image_url} alt="Featured Image" className="d-block w-100" />
+                                <img src={slide.image_url} alt="Featured" className="d-block w-100" />
                                 <div className='sliderText'>
                                     <h1>{slide.title}</h1>
                                     <p>{slide.description}</p>

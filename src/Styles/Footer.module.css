@@ -38,25 +38,11 @@
     cursor: grab;
     margin-right: 20px;
 }
-.paragraphFooter{
+.paragraphFooter p{
     cursor: pointer;
-    margin-right: 20px;
-}
-.paragraphFooter2{
-    cursor: pointer;
-    margin-right: 60px;
-}
-.paragraphFooter3{
-    cursor: pointer;
-    margin-right: 150px;
-}
-.paragraphFooter4{
-    cursor: pointer;
-    margin-right: 80px;
-}
-.footerParagraph5{
-    margin-right: 150px;
-    cursor: pointer;
+    width: 100%;
+    font-size: 15px;
+    text-align: left;
 }
 .masterCard{
     margin-left: 20px;

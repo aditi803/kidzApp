@@ -37,11 +37,6 @@ const Featured = () => {
                 }
             }
         ],
-        // afterChange: function (index) {
-        //     console.log(
-        //         `Slider Changed to: ${index + 1}, background: black; color: red`
-        //     );
-        // }
     };
 
     const data = [
@@ -65,7 +60,7 @@ const Featured = () => {
 
   return (
     <div>
-        <div className={style.container}>
+        <div className="container">
             <div className='row'>
                 <span className={style.featuredSpan}>As Featured in </span>
                     <div class="row d-flex justify-content-center text-center">
@@ -75,7 +70,7 @@ const Featured = () => {
                                     {data.map((slide, i) => {
                                         return (
                                             <div key={slide.id} className={style.featuredImage}>
-                                                <img src={slide.src} alt="Featured Image"/>
+                                                <img src={slide.src} alt="Featured"/>
                                             </div>
                                         )
                                     })}

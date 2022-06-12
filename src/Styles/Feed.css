@@ -1,0 +1,159 @@
+.newFeed{
+    padding: 40px 0;
+    padding-top: 0!important;
+}
+/* @media(min-width: 1200px)
+   {
+    .container {
+        max-width: 1140px;
+    }
+}
+@media(min-width: 992px){
+    .container
+    {
+        max-width: 1170px;
+        width: 100%;
+    }
+}
+@media(min-width: 768px)
+{
+    .container {
+        max-width: 720px;
+    }
+    .feedCol{
+        -webkit-box-flex: 0;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+@media(min-width: 576px)
+{
+    .container {
+        max-width: 540px;
+    }
+}
+@media(max-width: 1500px){
+    .newFeed p{
+        font-size: 18px;
+        line-height: 22px;
+    }
+} */
+.container{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.feedRow{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.feedCol{
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.kidsFeed{
+    display: flex;
+    margin-top: 60px;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+.kidsFeedLeft{
+    width: 30%;
+}
+.kidsFeedLeft img {
+    max-width: 100%;
+    height: 100%;
+    width: 100%;
+}
+.feedImg{
+    vertical-align: middle;
+    border-style: none;
+}
+.kidsFeedRight{
+    width: 70%;
+    background-color: #00aff4;
+    padding: 60px 80px;
+}
+.kidsFeedRight .titleSubs{
+    color: #fff;
+    line-height: 60px;
+    font-size: 65px;
+    font-weight: 500;
+    margin-bottom: 0;
+    width: 100%;
+    text-align: center !important;
+}
+.kidsFeedRight p{
+    color: #fff;
+    line-height: 24px;
+    font-size: 22px;
+    margin-top: 8px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.kidsFeedForm{
+    display: flex;
+    margin-bottom: 30px;
+}
+.kidsFeedForm form{
+    margin: 0 auto;
+    width: 100%;
+}
+.kidsFeedForm input[type=email] {
+    width: 70%;
+    float: left;
+    border-radius: 25px 0 0 25px;
+    border: none;
+    box-shadow: none;
+    font-size: 16px;
+    line-height: 20px;
+    height: 40px;
+    padding: 10px 25px;
+    color: #8d969b;
+}
+.kidsFeedForm input[type=submit]#mc-embedded-subscribe {
+    width: 30%;
+    float: left;
+    border-radius: 0 25px 25px 0;
+    border: none;
+    box-shadow: none;
+    font-size: 16px;
+    line-height: 21px;
+    height: 40px;
+    color: #fff;
+    background-color: #e25b25;
+    cursor: pointer;
+}
+.kidsFeedValue:first-child{
+    padding-left: 0;
+}
+.kidsFeedValue{
+    width: 30%;
+    float: left;
+    border-right: 1px solid #fff;
+    padding-right: 20px;
+    text-align: left;
+    padding-left: 20px;
+
+}
+.kidsFeedValue span.feedValues {
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 30px;
+    color: #fff;
+    text-align: left;
+}
+.kidsFeedRight .kidsFeedValue p{
+    font-size: 20px;
+    line-height: 30px;
+    text-align: left;
+}

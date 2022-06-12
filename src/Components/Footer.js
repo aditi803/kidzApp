@@ -10,7 +10,7 @@ const Footer = () => {
   return (
     <>
         <div className={style.mainFooter}>
-            <div className='container-fluid col-md-12'>
+            <div className='container col-md-12'>
                 <div className='row'>
                     <div className='col '></div>
                     <div className='col'>
@@ -25,7 +25,7 @@ const Footer = () => {
                     </div>
                     <div className='col'>
                         <h3 className={style.footerHeading}>Kids Activity by category</h3>
-                        <div className={style.paragraphFooter2}>
+                        <div className={style.paragraphFooter}>
                             <p>Baby & Toddler</p>
                             <p>Birthdays</p>
                             <p>Courses, Camps &</p>
@@ -36,15 +36,15 @@ const Footer = () => {
                     </div>
                     <div className='col'>
                         <h3 className={style.footerHeading}>Family Activity</h3>
-                        <div className={style.paragraphFooter3}>
-                            <p className='paragraphFooter'>Venues</p>
-                            <p className='paragraph2'>Courses</p>
-                            <p className='paragraph3'>Events</p>
+                        <div className={style.paragraphFooter}>
+                            <p>Venues</p>
+                            <p>Courses</p>
+                            <p>Events</p>
                         </div>
                     </div>
                     <div className='col'>
                         <h3 className={style.footerHeading}>Others</h3>
-                        <div className={style.paragraphFooter4}>
+                        <div className={style.paragraphFooter}>
                             <p>Find Activities</p>
                             <p>Our Story</p>
                             <p>About The App</p>
@@ -56,8 +56,8 @@ const Footer = () => {
                     <div className='col'>
                         <h3 className={style.footerHeading}>Available on</h3>
                         <div className='col'>
-                            <img style={{width:"130px",height:"80px", display:"flex"}} src="https://drfsb8fjssbd3.cloudfront.net/images/kidzapp-app-store.svg" />  
-                            <img style={{width:"130px", display:"flex"}} src="https://drfsb8fjssbd3.cloudfront.net/images/kidzapp-google-play.svg" />                          
+                            <img style={{width:"130px",height:"80px", display:"flex"}} src="https://drfsb8fjssbd3.cloudfront.net/images/kidzapp-app-store.svg" alt='...'/>  
+                            <img style={{width:"130px", display:"flex"}} src="https://drfsb8fjssbd3.cloudfront.net/images/kidzapp-google-play.svg" alt='...'/>                          
                         </div>
                     </div>
                 </div>
@@ -65,16 +65,18 @@ const Footer = () => {
                     <div className='col col-md-6'></div>
                     <div className='col'>
                         <h3 className={style.footerHeading}>Indoor/Outdoor Kids Activity</h3>
-                        <div className={style.footerParagraph5}>
-                            <p className={style.paragraph}> Indoor </p>
-                            <p className={style.paragraph}>Outdoor</p>
+                        <div className={style.paragraphFooter}>
+                            <p> Indoor </p>
+                            <p>Outdoor</p>
                         </div>
                     </div>
                     <div className='col'>
                         <h3 className={style.footerHeading}>Legal</h3>
-                        <p className={style.paragraph}>Pirvacy Policy</p>
-                        <p className='paragraph'>Terms and Conditions</p>
-                        <p className='paragraph'>Cancellation Policy</p>
+                        <div className={style.paragraphFooter}>
+                            <p>Pirvacy Policy</p>
+                            <p>Terms and Conditions</p>
+                            <p>Cancellation Policy</p>
+                        </div>    
                     </div>
                     <div className='col'>
                     <div className={style.footerIcon}>
@@ -92,7 +94,7 @@ const Footer = () => {
                     <div className='col' style={{paddingBottom:"20px"}}>
                         <img className={style.visaCard} src={visaCard}  alt='Visa Card'/>
                         <img className={style.masterCard} src={masterCard}  alt='Master Card'/>
-                        <img className={style.whatsappImg} src={whatsappImg}  alt='Whatsapp Image'/>
+                        <img className={style.whatsappImg} src={whatsappImg}  alt='Whatsapp'/>
                     </div>
                 </div>
             </div>

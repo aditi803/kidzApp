@@ -86,11 +86,6 @@ const Kidzappolis = () => {
                 }
             }
         ],
-        afterChange: function (index) {
-            console.log(
-                `Slider Changed to: ${index + 1}, background: black; color: red`
-            );
-        }
     };
 
 
@@ -146,18 +141,18 @@ const Kidzappolis = () => {
                 <div className='row'>
                     <div className='col-md-12'>
                         <h2>Kidzappolis</h2>
-                        <div class="row d-flex justify-content-center text-center">
+                        <div className="row d-flex justify-content-center text-center">
                         <div className="col-md-12">
                             <div className={style.kidsCarousel}>
                                 <Slider {...settings}>
                                     {item?.map((slide,i) => {
                                         return (
-                                        <>
+                                        
                                             <div key={slide.id} className={style.activityBox}>
-                                                <img src={slide.image_url} alt="Featured Image" style={{height:"120px", width:"140px"}}/>
+                                                <img src={slide.image_url} alt="Featured" style={{height:"150px", width:"160px"}}/>
                                                 <p className={style.paraKidsSection}>{slide.name}</p>
                                             </div>
-                                        </>
+                                        
                                         )
                                     })}
                                 </Slider>
@@ -167,14 +162,14 @@ const Kidzappolis = () => {
                     </div>
                     <div className='col-md-12'>
                         <h2 className={style.kidsCollection}>Kidzapproved Collections</h2>
-                        <div class="row d-flex justify-content-center text-center">
+                        <div className="row d-flex justify-content-center text-center">
                         <div className="col-md-12">
                             <div className={style.kidsCarousel}>
                                 <Slider {...collectionSettings}>
                                     {collections.map((slide, i) => {
                                         return (
                                             <div key={slide.id} className={style.activityCollectionBox}>
-                                                <img src={slide.src} alt="Featured Imag" className={style.kidsCollectionImg}/>
+                                                <img src={slide.src} alt="Featured" className={style.kidsCollectionImg}/>
                                                 <span className={style.spanKidsSection}>{slide.captionCollection}</span>
                                             </div>
                                         )

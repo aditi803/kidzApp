@@ -1,16 +1,6 @@
 import React from 'react'
 import {useState, useEffect} from "react"
 import  "../Styles/Blog.css"
-import blog1 from "../Assets/Blog/blog1.webp"
-import blog2 from "../Assets/Blog/blog2.webp"
-import blog3 from "../Assets/Blog/blog3.webp"
-import blog4 from "../Assets/Blog/blog4.webp"
-import blog5 from "../Assets/Blog/blog5.webp"
-import blog6 from "../Assets/Blog/blog6.jpg"
-import blog7 from "../Assets/Blog/blog7.jpg"
-import blog8 from "../Assets/Blog/blog8.webp"
-import blog9 from "../Assets/Blog/blog9.jpg"
-import blog10 from "../Assets/Blog/blog10.webp"
 
 const Blog = () => {
 
@@ -30,34 +20,24 @@ const Blog = () => {
         <h2>Our Blog Picks</h2>
           <div className='row'>
             {item?.map((content,i) => {
-              return((i==0 || i==5 ? 
-                <div className='col-8'>
-                  <div class="card blogCard" >
-                    <img src={content.cover_image} class="card-img-top" alt="..." />
-                    <div class="card-body blogCardBody">
-                      <p class="card-text blogCardText ">{content.title}</p>
-                      <hr/>
-                      <p className="blogCardParaText">{content.auther_name}</p>
-                    </div>
-                  </div>
-                </div> 
-                :
-                <div className='col-4'>
-                  <div class="card blogCard" >
-                    <img src={content.cover_image} class="card-img-top" alt="..."/>
-                    <div class="card-body blogCardBody">
-                      <p class="card-text blogCardText">{content.title}</p>
+              return( 
+                <div className={`${i===0 || i===5 ?'col-md-8':'col-md-4'}`}  key={content.id}>
+                  <div className="card blogCard" >
+                    <img src={content.cover_image} className="card-img-top" alt="..." />
+                    <div className="card-body blogCardBody">
+                      <p className="card-text blogCardText ">{content.title}</p>
                       <hr/>
                       <p className="blogCardParaText">{content.auther_name}</p>
                     </div>
                   </div>
                 </div>
-              ))
+              )
             })}
           </div>
+
           <div className='row'>
             <div className='col-12'>
-              <button type="button" class="btn btn-light btn-lg blogButton">View All</button>
+              <button type="button" className="btn btn-light btn-lg blogButton">View All</button>
             </div>
           </div>
         </div>

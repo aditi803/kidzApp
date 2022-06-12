@@ -4,6 +4,10 @@
     font-size: 20px;
     color: #002240;
     text-align: left;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 .cardSliderBody p{
     font-size: 14px;
@@ -45,8 +49,8 @@
     margin-right: auto;
 }
 .starRate img{
-    width: 12px!important;
-    height: 10px!important;
+    width: 12px;
+    height: 10px;
     position: relative!important;
     margin: 0px!important;
 }

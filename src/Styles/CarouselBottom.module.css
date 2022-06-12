@@ -63,94 +63,11 @@
     line-height: 20px;
     color: #002240;
 }
-p{
-    text-align: left!important;
-    float: left!important;
-    margin-right: auto;
-}
-/* .purplePara {
-    font-size: 14px;
-    line-height: 16px;
-    color: #955da4;
-    margin-bottom: 10px;
-    overflow: hidden;
-    font-family:bold;
-    text-align: left!important;
-    margin-right: auto;
-    font-weight: 800;
-} */
-/* .starRate{
-    background-color: #f0c61a;
-    border-radius: 9px;
-    min-width: 60px;
-    height: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: auto;
-    max-width: fit-content;
-    padding-right: 10px;
-} */
-/* .starRate img{
-    width: 12px!important;
-    height: 10px!important;
-    position: relative!important;
-    margin: 0px!important;
-} */
-/* .starRate span{
-    font-size: 12px;
-    color: #fff;
-    margin-left: 5px;
-    height: 15.2px;
-} */
-/* .bottomCard{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 10px;
-    text-align: left;
-    margin-right: auto;
-} */
-/* .cardLeft {
-    display: flex !important;
-    flex-direction: column !important;
-} */
-/* .cardLeft .bottomCard {
-    align-items: center;
-    justify-content: flex-start;
-} */
-.oldPrice{
-    font-size: 13px;
-    line-height: 15px;
-    color: #f70b0b;
-    text-decoration: line-through;
-    font-weight: 500;
-    margin: 0;
-}
-.newPrice{
-    font-size: 15px;
-    line-height: 18px;
-    margin-bottom: 0;
-    color: #333;
-}
-.bookNow{
-    color: #e25b25;
-    background-color: #fff;
-    border: 1px solid #e25b25;
-    border-radius: 12px;
-    min-width: 120px;
-    font-size: 14px;
-    line-height: 16px;
-    padding: 5px 10px;
-    position: relative;
-    text-decoration: none;
-    text-align: center;
-    justify-content: center;
-}
+
 
 /* <-----------------------------------------------------Slider.css-----------------------------------------------------------------------------> */
 
-.head{
+.head button{
     border: 1px solid #d6e5e8;
     background-color: #fafafa;
     border-radius: 5px;
@@ -158,15 +75,17 @@ p{
     align-items: center;
     justify-content: center;
     color: #002240; 
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 600;
+    padding: 15px 0px 15px 0px;
     width: 80% !important;
 }
-
-.para{
-  text-align: center!important;
-  margin: 2%; 
-  padding-right: 1%;
+.head button:hover{
+    border: 2px solid #00AFF4;
+}
+.head button:focus{
+    background-color: #00AFF4;
+    color: white;
 }
 .upperCarousel{
   padding: 5%;

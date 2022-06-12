@@ -1,23 +1,17 @@
-import React from 'react'  
-import OwlCarousel from 'react-owl-carousel';  
-import 'owl.carousel/dist/assets/owl.carousel.css';  
-import 'owl.carousel/dist/assets/owl.theme.default.css';  
+import React,{useState, useEffect} from 'react'    
 import style from  "../Styles/CarouselBottom.module.css"
-import image1 from "../Assets/carousel-bottom-images/1.jpg"
-import deal from "../Assets/carousel-bottom-images/Deal.svg"
-import star from "../Assets/carousel-bottom-images/star.svg"
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Container } from 'reactstrap';
-import Kidzappolis from './Kidzappolis';
-import { useEffect, useState } from 'react';
-import BottomCardSlider from './BottomCardSlider';
+import "../Styles/BottomCardSlider.css"
+import axios from "axios"
 
 const CarouselBottom = () => {
 
 
     const [item, setItem] =useState([]);
+    const [btnName, setBtnName] = useState("featured_kidzapp_deal")
 
     useEffect(() => {
         fetch("https://api2.kidzapp.com/api/3.0/lists?country_code=ae")
@@ -26,12 +20,59 @@ const CarouselBottom = () => {
         .catch(err => console.log("Error: " +err))
     },[])
 
-
     const settings = {
         autoplay:true,
         autoplaySpeed:1000,
         infinite: true,
         slidesToShow: 4,
+        lazyLoad: true,
+        swipeToSlide: true,
+        arrows: true,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    initialSlide: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ],
+    };
+
+
+    const [data, setData] = useState([])
+    useEffect(() =>
+    {
+        axios.get(`https://api2.kidzapp.com/api/3.0/experiences/curated-list/?list_name=${btnName}&country_code=&page=1&page_size=10&city=&website=1`)
+        .then(response =>{
+            // console.log('response',response.data.results);
+            setData(response.data.results);
+            // console.log(btnName)
+        })
+        .catch(err => {console.log("Error: " +err)})
+    },[btnName])
+
+    const sliderSettings = {
+        autoplay:true,
+        autoplaySpeed:1000,
+        slidesToShow: 3,
         lazyLoad: true,
         swipeToSlide: true,
         arrows: true,
@@ -82,12 +123,11 @@ const CarouselBottom = () => {
                 <div className="col-md-10">
                     <div className={style.upperCarousel}>
                     <Slider {...settings}>
-                        {item?.map((slide, i) => {
-                            
+                        {item?.map((slide, i) => {            
                             return (
                                 
                                 <div key={slide.id} className={style.head}>                                   
-                                    <p className={style.para}>{slide.name}</p>             
+                                    <button onClick={()=>setBtnName(slide.internal_name)} className={style.para}>{slide.name}</button>             
                                 </div>
                             )
                         })}
@@ -97,55 +137,53 @@ const CarouselBottom = () => {
             </div>
         <div> 
              
-{/* <-----------------------------------------------------------------Owl Carousel------------------------------------------------------------------> */}
+{/* <-----------------------------------------------------------------Slick Slider2------------------------------------------------------------------> */}
             
-            {/* <>
-            {list.map((content) => {
-                    <OwlCarousel items={3}   
-                    className={style.owlDots} 
-                    dots={true}
-                    loop  
-                    item
-                    nav
-                    arrows
-                    margin={8} >  
-                    
-                    <div className={style.item}>
-                        <div className={style.card} >
-                            <div className='card-head'>
-                                <img src= {content.image_url} className={style.img}/>
-                                <span className={style.newDeal}>
-                                    <img style={{width:"45px"}} alt="Deal" src={deal} ></img>  
-                                </span>
-                                <div className={style.cardBody}>
-                                    <h3 className={style.cardHeader}>{content.title}</h3>
-                                    <p className={style.purplePara}>Villa No.1, Street 8A, Safa 2,...</p>
-                                    <div className='clearfix'>
-                                            
-                                    </div>
-                                    <span className={style.starRate} >
-                                        <img src={star} />
-                                        <span>
-                                            4.3
-                                       </span>    
+<div className='container'>
+        <div className='row' style={{justifyContent:" center"}}>
+            
+            <Slider {...sliderSettings}>
+            {
+                    data?.map((slide,i) =>                 
+                    (   
+                        <div className='col-3' key={slide.id} >
+                                    
+                           <div className='cardSlider' style={{boxShadow: "1px 1px 5px #999",
+                                background: "#eeeeee66", 
+                                margin:'0.5rem 1rem',
+                                width:"320px",
+                                height:"350px",
+                                }}>
+                               <div className="img-blog">
+                                    <img src={slide.image_url}  
+                                        className="card-img-top blogDataImg"
+                                        style={{height:"180px", width:"450px",marginTop: "5px"}}
+                                        alt="..." 
+                                    />
+                                    <div className='cardSliderBody'>
+                                    <h3>{slide.title}</h3>
+                                    <p>{slide.address}</p> 
+                                    <span className='starRate'>
+                                        <img src='https://drfsb8fjssbd3.cloudfront.net/images/new-white-star.svg' alt='Star'/>
+                                        <span>{slide.average_rating.toFixed(1)}</span>
                                     </span>
-                                     <div className={style.bottomCard}>
-                                        <div className={style.cardLeft}>
-                                            <p className={style.oldPrice}>AED 120</p>
-                                            <p className={style.newPrice}>AED 99</p>
+                                    <div className='bottomSliderCard'>
+                                        <div className='sliderCardLeft'>
+                                            <p>{slide.city.country.currency_code}</p>
                                         </div>
-                                        <a className={style.bookNow}>Book Now</a>
-                                    </div>
+                                        <button className='bookNow'>Book Now</button>
+                                    </div>    
+                                </div> 
                                 </div>
-                            </div>           
+                                   
+                            </div> 
                         </div>
-                    </div> 
-                </OwlCarousel>
-            })}
-                           
-            </> */}
+                    ))
+                }
+               </Slider> 
+        </div>
+    </div>
 
-            <BottomCardSlider />
              
             <button type="button" class="btn btn-outline-success" style={{borderRadius:"30px", padding:"8px 65px", marginTop: "50px"}}>View All</button>
             </div>  

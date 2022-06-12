@@ -15,12 +15,27 @@ code {
 }
 
 .slick-slider .slick-prev:before {
-  color: #484848 !important;
-  cursor: pointer;
+  position: absolute;
+  top: calc(50% - 4px);
+  left: 15px;
+  content: '';
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 15px;
+  transform: rotate(137deg);
 }
 .slick-slider .slick-next:before {
-  color: #484848 !important;
-  cursor: pointer;
+  position: absolute;
+  top: calc(50% - 4px);
+  left: 15px;
+  content: '';
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 15px;
+  transform: rotate(-45deg);
+  left: -7px;
 }
 .slick-slide .slick-active{
   margin: 1%;
