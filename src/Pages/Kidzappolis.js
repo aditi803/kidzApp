@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useState,useEffect } from 'react';
 import axios from 'axios';
+import { Kidzappolis_API } from '../Configuration/utils';
 
 const Kidzappolis = () => {
     const settings = {
@@ -42,7 +43,7 @@ const Kidzappolis = () => {
 
     const [item, setItem] = useState([]);
     const getReviewData = () => {
-        axios.get("https://api2.kidzapp.com/api/3.0/categories?country_code=ae"
+        axios.get(Kidzappolis_API
         )
         .then((response) => {
             const myData = response.data;

@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import '../NavbarPagesStyles/BlogData.css'
 import {FaCalendarAlt, FaUserCircle} from "react-icons/fa"
+import { BlogData_API } from '../Configuration/utils';
 
 const BlogsData = () => {
 
     const [item, setItem] = useState([]);
     useEffect(() => {
-        fetch("https://api2.kidzapp.com/api/3.0/blogs?page=1&limit=5&country_code=ae")
+        fetch(BlogData_API)
         .then(res => res.json())
         .then(data => setItem(data.results))
         .catch(err => console.log("Error: " +err))

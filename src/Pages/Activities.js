@@ -4,6 +4,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import axios from 'axios';
+import { Activities_API } from '../Configuration/utils';
 
 const Activities = () => {
 
@@ -42,7 +43,7 @@ const Activities = () => {
 
   const [item, setItem] = useState([])
   const getReviewData = () => {
-    axios.get("https://api2.kidzapp.com/api/3.0/reviews/featured?page=1&page_size=20&country_code=ae")
+    axios.get(Activities_API)
     .then((response) => {
     const myData = response.data;
     setItem(myData)

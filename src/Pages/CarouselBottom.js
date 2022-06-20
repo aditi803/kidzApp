@@ -6,6 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { Container } from 'reactstrap';
 import "../Styles/BottomCardSlider.css"
 import axios from "axios"
+import { CarouselBottom_API } from '../Configuration/utils';
 
 const CarouselBottom = () => {
 
@@ -14,7 +15,7 @@ const CarouselBottom = () => {
     const [btnName, setBtnName] = useState("featured_kidzapp_deal")
 
     useEffect(() => {
-        fetch("https://api2.kidzapp.com/api/3.0/lists?country_code=ae")
+        fetch(CarouselBottom_API)
         .then(res => res.json())
         .then(data => setItem(data))
         .catch(err => console.log("Error: " +err))

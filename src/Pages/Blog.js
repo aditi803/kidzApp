@@ -1,5 +1,6 @@
 import React from 'react'
 import {useState, useEffect} from "react"
+import { Blog_API } from '../Configuration/utils';
 import  "../Styles/Blog.css"
 
 const Blog = () => {
@@ -8,7 +9,7 @@ const Blog = () => {
 
   const [item, setItem] = useState([]);
     useEffect(() => {
-        fetch("https://api2.kidzapp.com/api/3.0/blogs?page=1&limit=5&country_code=ae")
+        fetch(Blog_API)
         .then(res => res.json())
         .then(data => setItem(data.results))
         .catch(err => console.log("Error: " +err))

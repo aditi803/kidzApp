@@ -4,6 +4,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../Styles/HomePageBanner.css"
+import { HomePageBanner_API } from '../Configuration/utils';
 
 const HomePageBanner = () => {
 
@@ -46,7 +47,7 @@ const HomePageBanner = () => {
 
     const [item, setItem] = useState([]);
     useEffect(() => {
-        fetch("https://api2.kidzapp.com/api/3.0/experiences/curated-list/?list_name=featured_banner_uae&country_code=&page=1&page_size=10&city=&website=1")
+        fetch(HomePageBanner_API)
         .then(res => res.json())
         .then(data => setItem(data.results))
         .catch(err => console.log("Error: " +err))
