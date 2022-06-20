@@ -68,60 +68,37 @@
     margin-left: auto;
 }
 
-.blogCategoryListing {
-    padding-left: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    list-style-type: none;
-    margin: 0 0 20px;
-}
 ul{
     list-style: none;
 }
 .blogCategoryListing li {
     flex: 0 0 25%;
     height: 50px;
-    padding-right: 30px;
 }
-
-.blogCategoryListing{
-    width: 40%;
+.col-6.blogListing{
+    display: flex;
+    margin: auto;
+    width: 96%;
 }
 .blogCategoryListing li{
     position: relative;
     font-size: 18px;
     line-height: 1;
+    padding-right: 10px;
     font-weight: 400;
-    text-align: left;
-    padding: 0 15px;
+    text-align: center;
+    padding: 0px 10px 0px 10px;
     letter-spacing: .5px;
     margin: 5px 0;
     border-radius: 5px;
     color: #fff;
     display: flex;
     justify-content: space-between;
-    min-width: 100%;
+    /* min-width: 100%; */
     align-items: center;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-}
-.blogCategoryListing .firstCategory{
-    background-image: url("../Assets/NavbarBlog/listCategory1.webp");
-}
-.blogCategoryListing .secondCategory{
-    margin-left: 20px;
-    background-image: url("https://beta.kidzapp.com/images/btn-02.png");
-}
-.blogCategoryListing .thirdCategory{
-    margin-left: 20px;
-    background-image: url("https://beta.kidzapp.com/images/btn-03.png");
-}
-.blogCategoryListing .fourthCategory{
-    margin-left: 20px;
-    background-image: url("https://beta.kidzapp.com/images/btn-04.png");
 }
 
 .blogCategoryListing li span {

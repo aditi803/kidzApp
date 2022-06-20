@@ -14,3 +14,5 @@ export const HomePageBanner_API = getApiUrl("/experiences/curated-list/?list_nam
 export const CarouselBottom_API = getApiUrl("/lists?country_code=ae")
 
 export const BlogData_API = getApiUrl("/blogs?page=1&limit=5&country_code=ae")
+
+export const BlogTabs_API = getApiUrl("/blogs/categories?country_code=ae")
