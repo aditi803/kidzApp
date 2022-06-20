@@ -103,7 +103,7 @@ const Activities = () => {
                     </div>
                 </div>
               </div>
-              <button type="button" class="btn btn-outline-success" style={{borderRadius:"30px", padding:"8px 65px", marginTop: "50px"}}>View All</button>
+              <button type="button" className="btn btn-outline-success" style={{borderRadius:"30px", padding:"8px 65px", marginTop: "50px"}}>View All</button>
             </div>
           </div>
         </div>

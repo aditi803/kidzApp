@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import '../NavbarPagesStyles/BlogData.css'
-import { Card } from 'reactstrap';
 import {FaCalendarAlt, FaUserCircle} from "react-icons/fa"
 
 const BlogsData = () => {

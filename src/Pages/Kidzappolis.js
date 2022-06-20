@@ -90,6 +90,24 @@ const Kidzappolis = () => {
 
 
 
+    const [data, setData] = useState([]);
+    const getKidsCollection = () => {
+        axios.get("https://api2.kidzapp.com/api/3.0/lists?country_code=ae"
+        )
+        .then((response) => {
+            const myData = response.data;
+            setData(myData)
+            console.log(myData);
+        })
+        .catch((error) => {
+            console.log(error);
+        })
+    }
+
+    useEffect(() => {
+        getKidsCollection()
+    },[]);
+
     const collections = [
         {
             id:1,
